@@ -1,0 +1,12 @@
+127.0.0.1 localhost
+127.0.1.1 fenrir
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+127.0.0.1 maintenance_v001noreleased-debug-mode.vendor.fenrir vendor.fenrir
+127.0.0.1 dev-mainpage0080812569927.vendor.fenrir
+127.0.0.1 gitea-developmentfenrir-corp-unittesting-alphabeta.vendor.fenrir

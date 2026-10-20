@@ -1,0 +1,19 @@
+== grants: vledger ==
+GRANT USAGE ON *.* TO `vledger`@`localhost` IDENTIFIED BY PASSWORD '*84AFE30FBA635F412D4D5804513C5822AD109C8D'
+GRANT SELECT ON `vendorledger`.* TO `vledger`@`localhost`
+GRANT SELECT ON `mysql`.* TO `vledger`@`localhost`
+
+== grants: dbops ==
+GRANT ALL PRIVILEGES ON *.* TO `dbops`@`localhost` IDENTIFIED BY PASSWORD '*D6B63C1953E7F096DB307F8AC48C4AD703E57001'
+
+== mysql.user ==
+dbops	localhost
+mariadb.sys	localhost
+mysql	localhost
+root	localhost
+vledger	localhost
+
+== vendorledger tables ==
+invoices
+users
+vendors

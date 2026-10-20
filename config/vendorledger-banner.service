@@ -1,0 +1,12 @@
+[Unit]
+Description=VendorLedger login banner (inject machine IP at boot)
+After=network.target
+Before=ssh.service sshd.service getty.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/local/sbin/vendorledger-banner
+
+[Install]
+WantedBy=multi-user.target

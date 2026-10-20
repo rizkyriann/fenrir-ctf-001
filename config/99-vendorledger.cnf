@@ -1,0 +1,9 @@
+# VendorLedger DB hardening-for-the-attacker (intentional misconfig)
+# Ubuntu install path:  /etc/mysql/mariadb.conf.d/99-vendorledger.cnf
+#                  or:  /etc/mysql/mysql.conf.d/99-vendorledger.cnf
+#
+# - listen only on loopback (firewall also blocks 3306 from outside)
+# - disable secure_file_priv so SELECT ... INTO DUMPFILE / LOAD_FILE work
+[mysqld]
+bind-address      = 127.0.0.1
+secure_file_priv  = ""
